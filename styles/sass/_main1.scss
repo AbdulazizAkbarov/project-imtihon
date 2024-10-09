@@ -1,0 +1,696 @@
+@import "variable";
+main {
+  .main_hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 60px;
+    margin-top: 20px;
+
+    .main_hero_text {
+      h1 {
+        width: 600px;
+        font-size: 55px;
+        font-family: Fira Code;
+
+        span {
+          color: #0076F5;
+        }
+      }
+
+      .main_hero_button {
+        display: flex;
+        gap: 20px;
+        padding-top: 35px;
+
+        button {
+          @extend .all;
+          width: 170px;
+          height: 45px;
+          transition: 0.4s;
+
+          &:hover {
+            background-color: #0076F5;
+            border: 2px solid #0076F5;
+            color:white ;
+          }
+        }
+      }
+    }
+
+    .main_hero_img {
+      display: flex;
+      gap: 10px;
+
+      .ozgaruvchi {
+        transform: translateY(120px);
+      }
+
+      .ozgaruvchi1 {
+        transform: translateY(10px);
+      }
+      img {
+        width: 200px;
+        height: 580px;
+        @extend %shadow;
+        border-radius: 30px;
+        transition: 0.4s;
+
+        &:hover {
+          transform: scale(1.05);
+        }
+      }
+    }
+  }
+
+  .statistika {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    h2 {
+      padding-top: 20px;
+      font-family: Fira Code;
+      font-size: 35px;
+      color: #1b1a18;
+    }
+
+    .item_wrap {
+      padding-top: 25px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      .statistika_item {
+        padding-top: 30px;
+        text-align: center;
+        @extend %shadow2;
+        width: 270px;
+        height: 190px;
+        border-radius: 10px;
+        h3 {
+          font-family: Fira Code;
+          font-size: 30px;
+          color: #1b1a18;
+        }
+
+        p {
+          font-family: Inter;
+          color: $p_color;
+        }
+      }
+    }
+  }
+
+  .biz_haqimizda {
+    h2 {
+      padding-top: 20px;
+      font-family: Fira Code;
+      font-size: 35px;
+      color: #1b1a18;
+    }
+
+    .biz_haqimizda_wrap {
+      display: flex;
+      justify-content: start;
+      gap: 140px;
+      align-items: center;
+      padding-top: 25px;
+      flex-wrap: wrap;
+
+      .biz_haqimizda_text {
+        width: 400px;
+        h3 {
+          font-family: Inter;
+        }
+
+        p {
+          font-family: Inter;
+          color: $p_color;
+          padding-top: 10px;
+        }
+      }
+
+      .biz_haqimizda_img {
+        display: flex;
+        gap: 20px;
+        img {
+          width: 250px;
+          height: 450px;
+          object-fit: cover;
+          border-radius: 15px;
+          @extend %shadow;
+        }
+
+        .ozgaruvchi3 {
+          transform: translateY(25px);
+        }
+      }
+    }
+  }
+
+  .kurslar {
+    .kurs_header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 30px;
+      h2 {
+        padding-top: 20px;
+        font-family: Fira Code;
+        font-size: 35px;
+        color: #1b1a18;
+        padding-bottom: 25px;
+      }
+      p {
+        font-family: Inter;
+        color: #0076F5;
+        transition: 0.4s;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+
+    .kurslar_wrapper {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 50px;
+      flex-wrap: wrap;
+      gap: 10px;
+
+      .kurs_wrap {
+        text-align: center;
+        width: 380px;
+        min-height: 420px;
+        padding: 20px;
+        border-radius: 15px;
+        transition: 0.4s;
+
+        transition: 0.4s;
+
+        &:hover {
+          transform: scale(1.05);
+        }
+
+        &:hover {
+          @extend %shadow2;
+        }
+
+        button {
+          @extend .all;
+          padding: 8px 50px;
+
+          margin-top: 15px;
+          transition: 0.4s;
+
+          &:hover {
+            background-color: #0076F5;
+            color: $oq_rang;
+          }
+        }
+        h3 {
+          font-family: Inter;
+          font-size: 25px;
+          color: #1b1a18;
+          padding-top: 15px;
+        }
+        p {
+          font-family: Inter;
+          color: $p_color;
+          padding-top: 10px;
+          font-size: 16px;
+
+          span {
+            color: #0076F5;
+          }
+        }
+      }
+    }
+  }
+
+  .bepul_darsliklar {
+    .darsliklar_header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      p {
+        font-family: Inter;
+        color: #0076F5;
+        transition: 0.4s;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+      h2 {
+        padding-top: 20px;
+        font-family: Fira Code;
+        font-size: 35px;
+        color: #1b1a18;
+        padding-bottom: 25px;
+      }
+    }
+
+    .bepul_darsliklar_wrapper {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      width: 100%;
+
+      .bepul_darsliklar_wrap {
+        padding: 20px;
+        padding: 10px;
+        margin-bottom: 50px;
+        border-radius: 10px;
+        transition: 0.4s;
+        transition: 0.4s;
+
+        &:hover {
+          transform: scale(1.05);
+        }
+
+        img {
+          width: 300px;
+        }
+        &:hover {
+          @extend %shadow2;
+        }
+        h3 {
+          font-family: Inter;
+          font-size: 20px;
+          color: #1b1a18;
+          padding-top: 10px;
+        }
+        p {
+          font-family: Inter;
+          color: $p_color;
+          padding-top: 10px;
+          font-size: 16px;
+          max-width: 300px;
+        }
+
+        button {
+          @extend .all;
+          padding: 8px 50px;
+
+          margin-top: 15px;
+          transition: 0.4s;
+
+          &:hover {
+            background-color: #0076F5;
+            color: $oq_rang;
+          }
+        }
+      }
+    }
+  }
+
+  .bizning_jamoa {
+    .jamoa_header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      p {
+        font-family: Inter;
+        color: #0076F5;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+      h2 {
+        padding-top: 20px;
+        font-family: Fira Code;
+        font-size: 35px;
+        color: #1b1a18;
+        padding-bottom: 25px;
+      }
+    }
+
+    .bizning_jamoa_wrapper {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 80px;
+      flex-wrap: wrap;
+
+      .bizning_jamoa_wrap {
+        width: 280px;
+        text-align: center;
+        padding: 10px;
+        border-radius: 10px;
+        transition: 0.4s;
+
+        &:hover {
+          transform: scale(1.05);
+        }
+
+        &:hover {
+          @extend %shadow2;
+        }
+
+        h3 {
+          font-family: Inter;
+          font-size: 20px;
+          color: #1b1a18;
+          padding-top: 10px;
+        }
+
+        span {
+          color: #0076F5;
+          font-family: Inter;
+        }
+        p {
+          font-family: Inter;
+          color: $p_color;
+          padding-top: 10px;
+          font-size: 16px;
+          padding-bottom: 15px;
+        }
+
+        .icon_wrap {
+          img {
+            width: 25px;
+            height: 25px;
+          }
+        }
+      }
+    }
+  }
+
+  .sertifkat {
+    h2 {
+      padding-top: 20px;
+      font-family: Fira Code;
+      font-size: 35px;
+      color: #1b1a18;
+      padding-bottom: 25px;
+    }
+
+    .sertifkat_wrapper {
+      .sertifkat_text {
+        width: 450px;
+        h3 {
+          font-family: Inter;
+          font-size: 22px;
+          color: #1b1a18;
+          padding-top: 10px;
+          padding-bottom: 10px;
+        }
+        p {
+          font-family: Inter;
+          color: $p_color;
+          font-size: 16px;
+          padding-bottom: 15px;
+        }
+      }
+
+      img {
+        width: 600px;
+      }
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 50px;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+.sidebar {
+  background: #0076F5;
+  display: none;
+  position: relative;
+  z-index: 200;
+
+  ul {
+    margin-left: auto;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    li {
+      a {
+        padding: 10px 20px;
+        color: #fff;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: sans-serif;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  input {
+    width: 40px;
+    aspect-ratio: 1;
+    display: none;
+    overflow: hidden;
+    margin: 5px;
+    box-sizing: border-box;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+
+    &::before,
+    &::after {
+      content: "";
+      grid-area: 1/1;
+      transition: 0.3s;
+    }
+
+    &::before {
+      background: radial-gradient(closest-side at 12.5% 25%, #fff 96%, #0000) 0
+          0/80% 40%,
+        linear-gradient(#fff 50%, #0000 0) top/80% 40% repeat-y;
+    }
+
+    &::after {
+      padding: 10%;
+      background: radial-gradient(closest-side at 50% 12.5%, #fff 96%, #0000)
+          top / 20% 80% repeat-y,
+        radial-gradient(closest-side at 12.5% 50%, #fff 96%, #0000) left/80% 20%
+          repeat-x,
+        conic-gradient(from 90deg at 33% 33%, #0000 90deg, #fff 0) 100% 100%/60%
+          60% padding-box content-box;
+      transform: translate(-100%) translateZ(0) rotate(45deg);
+      opacity: 0;
+    }
+    &:checked::before {
+      transform: translate(100%);
+      opacity: 0;
+    }
+    &:checked::after {
+      transform: translate(0) translateZ(0) rotate(45deg);
+      opacity: 1;
+    }
+  }
+}
+
+@media (max-width: 1188px) {
+  header {
+    .sidebar {
+      display: flex;
+
+      ul {
+        position: fixed;
+        background: inherit;
+        flex-direction: column;
+        inset: 0 0 0;
+        padding: 40px;
+        margin: 0;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        transform: translate(-100%);
+        opacity: 0;
+        transition: 0.3s;
+      }
+
+      input {
+        display: grid;
+        z-index: 9999;
+      }
+      input:checked + ul {
+        transform: translate(0);
+        opacity: 1;
+      }
+    }
+    nav {
+      ul {
+        display: none;
+      }
+      .btn {
+        display: none;
+      }
+    }
+  }
+  main {
+    .main_hero {
+      margin-top: 50px;
+
+      flex-direction: column-reverse;
+      gap: 150px;
+    }
+
+    .statistika {
+      .item_wrap {
+        margin: 0 auto;
+
+        .statistika_item {
+          margin-top: 15px;
+        }
+      }
+    }
+
+    .kurslar {
+      .kurslar_wrapper {
+        margin: 0 auto;
+      }
+    }
+  }
+}
+@media (max-width: 670px) {
+  main {
+    .sertifkat {
+      h2 {
+        padding-top: 20px;
+        font-family: Fira Code;
+        font-size: 35px;
+        color: #1b1a18;
+        padding-bottom: 25px;
+      }
+
+      .sertifkat_wrapper {
+        .sertifkat_text {
+          width: 450px;
+          h3 {
+            font-family: Inter;
+            font-size: 22px;
+            color: #1b1a18;
+            padding-top: 10px;
+            padding-bottom: 10px;
+          }
+          p {
+            font-family: Inter;
+            color: $p_color;
+            font-size: 16px;
+            padding-bottom: 15px;
+          }
+        }
+
+        img {
+          width: 100%;
+        }
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 50px;
+        flex-wrap: wrap;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  main {
+    .kurslar {
+      .kurslar_wrapper {
+        justify-content: center;
+
+        .kurs_wrap {
+          width: 300px;
+        }
+
+        .kurs_wrap:nth-child(3) {
+          display: none;
+        }
+      }
+    }
+
+    .sertifkat {
+      .sertifkat_wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    }
+
+    .biz_haqimizda {
+      .biz_haqimizda_wrap {
+        justify-content: center;
+      }
+    }
+  }
+}
+@media (max-width: 376px) {
+  header {
+    .container {
+      nav {
+        padding: 0 !important;
+      }
+    }
+  }
+
+  main {
+    .main_hero {
+      .main_hero_img {
+        img {
+          width: 100px;
+          height: auto;
+        }
+      }
+
+      .main_hero_text {
+        width: 300px;
+
+        h1 {
+          font-size: 25px;
+          width: 320px;
+        }
+      }
+    }
+    .bizning_jamoa {
+      .jamoa_header {
+        h2 {
+          font-size: 25px;
+        }
+        p {
+          display: none;
+        }
+      }
+      .bizning_jamoa_wrapper {
+        justify-content: center !important;
+        gap: 30px;
+      }
+    }
+
+    .biz_haqimizda {
+      .biz_haqimizda_wrap {
+        gap: 60px;
+        .biz_haqimizda_img {
+          img {
+            width: 150px;
+            height: auto;
+          }
+        }
+      }
+    }
+    .bepul_darsliklar {
+      .darsliklar_header {
+        h2 {
+          font-size: 25px;
+        }
+      }
+    }
+  }
+}

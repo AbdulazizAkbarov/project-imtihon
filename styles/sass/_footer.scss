@@ -1,0 +1,192 @@
+footer{
+
+    .footer_wrapper{
+        padding-top: 80px;
+        display: flex;
+        justify-content: space-between;
+
+        padding-bottom: 50px;
+     
+
+        .footer_wrap{
+            width: 350px;
+            p{
+                font-family: Inter;
+                 color: #31344B;
+
+            }
+
+            .footer_icon_wrap{
+
+                padding-top: 15px;
+            }
+        }
+
+        .footer_wrap5{
+            width: 350px;
+            display: none;
+            p{
+                font-family: Inter;
+                 color: #31344B;
+
+            }
+
+            .footer_icon_wrap{
+
+                padding-top: 15px;
+            }
+        }
+    
+
+
+
+
+    
+    .footer_wrap2{
+       
+        h2{
+            font-family: Inter;
+             color: #31344B;
+             padding-bottom: 15px;
+        }
+        p{
+            font-family: Inter;
+            padding-top: 10px;
+             color: #31344B;
+             line-height: 30px;
+
+        }
+
+       
+    }
+
+
+
+
+
+.footer_wrap3{
+    
+    h2{
+        font-family: Inter;
+         color: #31344B;
+         padding-bottom: 15px;
+
+    }
+    p{
+        font-family: Inter;
+        padding-top: 10px;
+         color: #31344B;
+         line-height: 30px;
+
+    }
+
+   
+}
+
+
+
+.footer_wrap4{
+    width: 350px;
+    h2{
+        font-family: Inter;
+         color: #31344B;
+         padding-bottom: 15px;
+
+    }
+    p{
+        font-family: Inter;
+         color: #31344B;
+         padding-top: 10px;
+
+    }
+
+    .input_wrap{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        input{
+            width: 100%;
+            height: 35px;
+            border-radius: 5px;
+            padding: 5px;
+            border: 2px solid #0076F5;
+            color: #0076F5;
+            margin-top: 10px;
+    
+         }
+         ::placeholder{
+            color: #0076F5;
+         }
+     
+         button{
+             width: 100%;
+             height: 35px;
+             background-color:transparent;
+             border: 1px solid #0076F5; 
+             color: #0076F5;
+             
+             border-radius: 5px;
+             transition: 0.4s;
+
+             &:hover{
+                 background-color: #0076F5;
+                 
+                 color: white;
+             }
+     
+         }
+
+    }
+
+
+}
+
+    }
+
+}
+
+.chiziq{
+    background-color: lightgray;
+    width: 100%;
+    height: 1px;
+    
+}
+
+
+
+
+@media(max-width: 1040px){
+
+    footer{
+
+        .footer_wrapper{
+
+            .footer_wrap{
+
+                display: none;
+            }
+        }
+    }
+}
+
+
+@media (max-width:376px) {
+
+    footer{
+
+        .footer_wrapper{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+
+            .footer_wrap{
+                display: none !important;;
+            }
+
+            .footer_wrap5{
+                display: block !important;
+            }
+        }
+    }
+    
+}
